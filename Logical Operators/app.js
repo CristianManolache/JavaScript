@@ -17,3 +17,29 @@ if(day2 === "friday" && money2 > 50) {
 }else{
     console.log("You dont go out!");
 }
+
+//unary operator
+
+let text = "string";
+console.log(typeof text);
+
+//binary operator
+
+let number = 3;
+
+//ternary operator
+//condition (runs if true) : (runs if false)
+
+let result = 9;
+
+result % 2 === 0 ? console.log("even number") : console.log("odd number");
+
+console.log("**********************");
+let result2 = 10;
+let expression = result2%2;
+
+function response (text) {
+    console.log(text + " number");
+}
+
+expression === 0 ? response("even") : response("odd");
