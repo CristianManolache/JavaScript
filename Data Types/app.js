@@ -36,3 +36,24 @@ console.log(typeof symbol);
 const directions = {  UP   : Symbol( "UP" ),  DOWN : Symbol( "DOWN" ),  LEFT : Symbol( "LEFT" ),  RIGHT: Symbol( "RIGHT" )};
 console.log(directions);
 console.log(typeof directions);
+console.log("**********************");
+//Arrays
+let fruits = ["apple","orange","banana"];
+console.log(fruits)
+console.log(typeof fruits);
+console.log("**********************");
+//Function
+let code = function code() {
+    console.log("This is a function!!");
+}
+console.log(code);
+console.log(typeof code);
+console.log("**********************");
+//Objects
+let person = {
+    firstName: "Cristian",
+    lastName: "Manolache"
+}
+console.log(person);
+console.log(typeof person);
+console.log("**********************");
