@@ -28,15 +28,19 @@ function checkDuplicate (arr,item) {
 }
 //Remove item
 
-function removeItem(list){
-    if(list.length > 0){
-        console.log(`You deleted "${list[list.length-1]}" from the list!`);
-        list.pop()
+function removeItem(list) {
+    let answer = prompt("Which item would you like to delete from the list");
+    let correct = answer.trim().toLowerCase();
+    let index = list.indexOf(correct);
+
+    if(!checkDuplicate(list,correct)) {
+       let removedItem = list.splice(index,1);
+       console.log(removedItem);
+       alert(`Your removed "${removedItem}" from your list.`);
     }else {
-        console.log("List does not have any more items to delete");
+        console.log("No such value exists!");
     }
 
-}
 
 addItem(toDoList);
 addItem(toDoList);
