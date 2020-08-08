@@ -10,7 +10,7 @@ function addItem(arr){
     if(checkDuplicate(arr,correct)) {
         arr.push(correct);
      }else {
-         alert("Item already existing , will be not added!")
+         alert("Item already existing , will be not added!");
      }
 
 }
@@ -40,10 +40,22 @@ function removeItem(list) {
     }else {
         console.log("No such value exists!");
     }
+}
 
+//Function Displayitems
+
+function showItems(list) {
+    let listValues = "Your list items are : ";
+
+    for(let i = 0; i < list.length; i++){
+        listValues += `"List item Nr${i+1} : ${list[i]}"`;
+    }
+    alert(listValues);
+}
 
 addItem(toDoList);
 addItem(toDoList);
 addItem(toDoList);
 //removeItem(toDoList)
-console.log(toDoList);
+showItems(toDoList);
+
